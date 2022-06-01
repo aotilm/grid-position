@@ -1,0 +1,57 @@
+.container {
+	display: grid;
+	grid-template-areas: 
+		'header header  header1 header1'
+		'aside  main    main    main '
+		'footer footer  footer  footer';
+}
+
+.header {
+	grid-area: header;
+	background-color: gray;
+	height: 60px;
+}
+
+.header1 {
+	grid-area: header1;
+	background-color: orange;
+	height: 60px;
+}
+
+.aside {
+	grid-area: aside;
+	background-color: blue;
+	height: 500px;
+}
+
+.main {
+	grid-area: main;
+	background-color: yellow;
+	height: 500px;
+}
+
+.footer {
+	grid-area: footer;
+	background-color: green;
+	height: 60px;
+}
+
+.b1 {
+	width: 30%;
+	height: 15%;
+	background-color: pink;
+	position: absolute;
+	top: 50px;
+	right: 50px;
+	z-index: 1;
+	
+}
+
+.b2 {
+	width: 30%;
+	height: 15%;
+	background-color: orange;
+	position: absolute;
+	top: 25px;
+	right: 75px;
+}
